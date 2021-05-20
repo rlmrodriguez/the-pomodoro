@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel='shortcut icon' href='./images/favicon.ico' type='image/x-icon'>
+  <link rel='stylesheet' href='./css/styles.css'>
+  <title>The Pomodoro</title>
+</head>
+
+<body>
+  <div class='container'>
+    <h1>The Pomodoro</h1>
+    <div class='wrapper'>
+
+      <div class='items-wrapper'>
+        <div class='item'>
+          <p id="work" class="label">Focus</p>
+          <div class="timer">
+            <p id="f_minutes">25</p>
+            <p>:</p>
+            <p id="f_seconds">00</p>
+          </div>
+        </div>
+
+        <div class='item'>
+          <p class="label">Cycles</p>
+          <p id="counter" class='counter'>0</p>
+        </div>
+
+        <div class='item'>
+          <p id="break" class="label">Break</p>
+          <div class="timer">
+            <p id="b_minutes">05</p>
+            <p class="semicolon">:</p>
+            <p id="b_seconds">00</p>
+          </div>
+        </div>
+      </div>
+      <div class='btn-container'>
+        <button id="start" class="btn"><i class='fa fa-play'></i></button>
+        <button id="stop" class="btn"><i class='fa fa-pause'></i></button>
+        <button id="reset" class="btn"><i class='fa fa-history'></i></button>
+      </div>
+    </div>
+    <footer>
+      <p class='footer-text'> &copy; 2021 The Pomodoro / All rights reserved.</p>
+    </footer>
+  </div>
+
+
+  <script src='./script.js'></script>
+</body>
+
+</html>
